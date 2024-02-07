@@ -37,7 +37,7 @@ class AuthController extends Controller
 
 
             // Validate user registration input
-            $validate = $this->validate($request, [
+            $this->validate($request, [
                 'name' => 'required|string|max:255',
                 'email' => 'required|email|unique:users,email',
                 'password' => 'required|string|min:8',

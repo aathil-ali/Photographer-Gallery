@@ -11,6 +11,7 @@ class Album extends Model
 {
     use HasFactory;
 
+    // Fillable fields to allow mass assignment
     protected $fillable = [
         'user_id',
         'title',
@@ -20,6 +21,11 @@ class Album extends Model
         'featured',
     ];
 
+    /**
+     * Define a relationship with the User model.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function user()
     {
         return $this->belongsTo(User::class);

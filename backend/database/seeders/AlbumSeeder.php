@@ -12,6 +12,13 @@ class AlbumSeeder extends Seeder
 { 
     private $userId;
 
+    /**
+     * Constructor to set the user ID for the seeder.
+     *
+     * @param int $userId User ID to associate with the albums.
+     */
+
+
     public function __construct($userId)
     {
         $this->userId = $userId;
@@ -21,6 +28,8 @@ class AlbumSeeder extends Seeder
      */
     public function run(): void
     {
+
+        // Sample data for albums
 
         $albumsData = [
             [

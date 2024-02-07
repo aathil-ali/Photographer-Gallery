@@ -10,9 +10,17 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
+    /**
+     * Respond with a success JSON structure.
+     *
+     * @param mixed $data    The data to be included in the response.
+     * @param string $message The success message.
+     * @param int $code       The HTTP status code for the response.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function sendSuccess($data, $message, $code)
     {
-
         return response()->json(
             [
                 'success' => true,
@@ -23,9 +31,16 @@ class Controller extends BaseController
         );
     }
 
-    public function sendError( $message, $code)
+    /**
+     * Respond with an error JSON structure.
+     *
+     * @param string $message The error message.
+     * @param int $code       The HTTP status code for the response.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function sendError($message, $code)
     {
-
         return response()->json(
             [
                 'success' => false,
