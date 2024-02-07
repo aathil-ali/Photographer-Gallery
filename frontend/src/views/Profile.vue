@@ -47,7 +47,7 @@
                   <div class="relative">
                     <img
                       alt="..."
-                      :src="`http://127.0.0.1:8000/storage/${profile.profile_picture}`"
+                      :src="`${apiUrl}/storage/${profile.profile_picture}`"
                       class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                     />
                   </div>
@@ -78,7 +78,7 @@
                       <span
                         class="text-xl font-bold block uppercase tracking-wide text-blueGray-600"
                       >
-                        10
+                        {{ profile?.albums?.length }}
                       </span>
                       <span class="text-sm text-blueGray-400">Photos</span>
                     </div>
@@ -138,7 +138,7 @@
               >
                 <img
                   alt="..."
-                  :src="`http://127.0.0.1:8000/storage/${album.img}`"
+                  :src="`${apiUrl}/storage/${album.img}`"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -173,6 +173,7 @@ export default {
   data() {
     return {
       team2,
+      apiUrl:process.env.VUE_APP_API_URL
     };
   },
   components: {
