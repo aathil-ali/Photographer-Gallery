@@ -84,7 +84,7 @@ Explain the structure of the `frontend` folder. Highlight key directories and fi
 
 1. Clone the repository.
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/aathil-ali/Photographer-Gallery.git
    ```
 
 2. Navigate to the `backend` directory.
@@ -162,20 +162,3 @@ Explain how to run tests for both the backend and frontend.
   npm run test
   ```
 
-## Deployment
-
-Provide instructions on how to deploy the project to a production environment.
-
-## Contributing
-
-Explain how others can contribute to the project, including information on submitting issues and pull requests.
-
-## Troubleshooting
-
-Include common issues and their solutions.
-
-## License
-
-Specify the project's license and provide a link to the full license text.
-
----
