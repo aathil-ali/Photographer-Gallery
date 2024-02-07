@@ -131,6 +131,8 @@ Explain the structure of the `frontend` folder. Highlight key directories and fi
 - **Backend:**
   ```bash
   cd backend
+  php artisan migrate
+  php artisan storage:link
   php artisan serve
   ```
 
