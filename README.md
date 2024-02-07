@@ -62,6 +62,10 @@ Explain the structure of the `frontend` folder. Highlight key directories and fi
       # Frontend assets
     /components
       # Vue components
+    /layout
+      # layout
+    /store
+      # Vuex store
     /views
       # Vue views
     App.vue
