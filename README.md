@@ -111,9 +111,13 @@ Explain the structure of the `frontend` folder. Highlight key directories and fi
    php artisan key:generate
    ```
 
-6. Run migrations and seed the database.
+6. Run migrations.
    ```bash
-   php artisan migrate --seed
+   php artisan migrate 
+   ```
+7. Run Storage Link.
+   ```bash
+   php artisan storage:link
    ```
 
 ### Frontend Setup
@@ -134,9 +138,7 @@ Explain the structure of the `frontend` folder. Highlight key directories and fi
 
 - **Backend:**
   ```bash
-  cd backend
-  php artisan migrate
-  php artisan storage:link
+  cd backend  
   php artisan serve
   ```
 
