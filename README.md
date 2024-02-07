@@ -150,23 +150,4 @@ Explain the structure of the `frontend` folder. Highlight key directories and fi
 
 Access the backend API at `http://localhost:8000` and the frontend at `http://localhost:8080`.
 
-## API Documentation
-
-Provide details on the available API endpoints, request methods, and response formats. Consider using tools like Swagger or Postman for a more interactive API documentation.
-
-## Testing
-
-Explain how to run tests for both the backend and frontend.
-
-- **Backend:**
-  ```bash
-  cd backend
-  php artisan test
-  ```
-
-- **Frontend:**
-  ```bash
-  cd frontend
-  npm run test
-  ```
 
