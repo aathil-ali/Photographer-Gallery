@@ -19,7 +19,7 @@
 
 ## Introduction
 
-Provide a brief overview of the project, its purpose, and its main features. Mention the technologies used, such as Laravel for the backend and Vue.js for the frontend.
+
 
 ## Project Structure
 
